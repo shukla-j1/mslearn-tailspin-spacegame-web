@@ -22,7 +22,7 @@ pool:
                             version: 3.1.300
 
             - task: Npm@1
-                displayName: 'Run npm install'
+                displayName: 'Run npm INSTALL'
                   inputs:
                         verbose: false
 
