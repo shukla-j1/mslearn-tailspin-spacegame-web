@@ -12,7 +12,7 @@ pool:
   - npm
 
 variables:
-buildConfiguration: 'Release'
+  buildConfiguration: 'Release'
 
 steps:
 - task: UseDotNet@2
@@ -42,9 +42,9 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
- - task: DotNetCoreCLI@2
-   displayName: 'Build the project - Release'
-   inputs:
-     command: 'build'
-     arguments: '--no-restore --configuration Release'
-     projects: '**/*.csproj'
+- task: DotNetCoreCLI@2
+  displayName: 'Build the project - Release'
+  inputs:
+    command: 'build'
+    arguments: '--no-restore --configuration Release'
+    projects: '**/*.csproj'
